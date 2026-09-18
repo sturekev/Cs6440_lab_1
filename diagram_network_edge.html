@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Diagram</title>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        margin: 0;
+        padding: 24px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 0px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        padding: 24px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .mermaid {
+        overflow-x: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Home Network to ISP Diagram</h1>
+      <div class="mermaid">
+        graph TD
+            subgraph "The Network Edge"
+                subgraph "Home Access Network"
+                    Router[Home Router/AP] -- Ethernet --> Desktop[PC / Desktop]
+                    Router -- Wi-Fi --> Laptop[Laptop]
+                    Router -- Wi-Fi --> Phone[Smartphone]
+                    Router -- Wi-Fi --> Printer[Network Printer]
+                    Router -- Wi-Fi --> IoT[IoT: Smart Thermostat]
+                    Modem[Modem DSL/Cable] -- Coax/Phone Line --> ISP_Edge[ISP Edge Router]
+                    Router -- Ethernet --> Modem
+                end
+            end
+
+            subgraph "ISP Network"
+                ISP_Edge -- Fiber --> Core[Network Core / Internet]
+            end
+
+            style Router fill:#f9f,stroke:#333,stroke-width:2px
+            style Modem fill:#bbf,stroke:#333,stroke-width:1px
+            style ISP_Edge fill:#ff9,stroke:#333,stroke-width:1px
+            style Core fill:#ddd,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+      </div>
+    </div>
+  </body>
+</html>

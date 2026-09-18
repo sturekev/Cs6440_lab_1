@@ -1,0 +1,2997 @@
+1
+00:00:00,720 --> 00:00:04,400
+Hello viewers, hello. Uh,
+today I will talk about the
+
+2
+00:00:04,440 --> 00:00:05,700
+network and networking.
+
+3
+00:00:06,720 --> 00:00:10,260
+My name is Phac. I'm from, uh,
+Concordia University Ch-
+
+4
+00:00:10,700 --> 00:00:14,220
+in Chicago, um, working on my, uh, master
+
+5
+00:00:14,240 --> 00:00:16,200
+degree in computer science program right
+now.
+
+6
+00:00:16,460 --> 00:00:20,340
+So, uh, in this video,
+we will cover five thing in network
+
+7
+00:00:20,400 --> 00:00:23,400
+system.
+First is we will go through the network
+
+8
+00:00:23,600 --> 00:00:24,220
+foundation,
+
+9
+00:00:24,720 --> 00:00:27,340
+the Internet,
+and the network fu-fundamentals.
+
+10
+00:00:27,480 --> 00:00:30,960
+The second one is the network edge
+and network core.
+
+11
+00:00:31,440 --> 00:00:33,760
+I will explain the difference between
+them.
+
+12
+00:00:34,340 --> 00:00:38,140
+Number three is the communication
+and network protocols.
+
+13
+00:00:38,980 --> 00:00:42,500
+So we will understand what
+is the network protocols,
+
+14
+00:00:42,860 --> 00:00:46,320
+why protocols are necessary in a network
+system.
+
+15
+00:00:46,620 --> 00:00:50,480
+Number four is understanding the network
+performance, the major
+
+16
+00:00:51,000 --> 00:00:53,560
+factor that affect the network
+performance.
+
+17
+00:00:53,740 --> 00:00:56,040
+You will know why we getting lag,
+
+18
+00:00:57,080 --> 00:01:00,880
+uh,
+slow when we try to watching the videos on
+
+19
+00:01:00,940 --> 00:01:04,599
+YouTube or et cetera. And finally
+is the network security.
+
+20
+00:01:05,099 --> 00:01:08,700
+Why security is essential in the modern
+computer
+
+21
+00:01:08,760 --> 00:01:12,460
+networks. So first,
+let's go to the network foundation.
+
+22
+00:01:14,120 --> 00:01:17,260
+As a definition,
+we will have the computer network
+
+23
+00:01:17,360 --> 00:01:18,100
+is a group
+
+24
+00:01:18,180 --> 00:01:20,020
+of two or more computer
+
+25
+00:01:21,740 --> 00:01:25,280
+or devices that are connected, so they can
+
+26
+00:01:25,340 --> 00:01:28,940
+communicate and share resources such as
+files,
+
+27
+00:01:29,160 --> 00:01:32,460
+printers, application, or Internet access.
+
+28
+00:01:32,960 --> 00:01:34,140
+In this one, we will--
+
+29
+00:01:35,120 --> 00:01:38,480
+There's another thing
+when they talk why people
+
+30
+00:01:38,840 --> 00:01:40,380
+saying, like, network
+
+31
+00:01:41,200 --> 00:01:44,620
+is a network of networks.
+Because Internet is the,
+
+32
+00:01:45,200 --> 00:01:48,780
+uh, ultimate network system, where
+is the massive
+
+33
+00:01:48,900 --> 00:01:52,320
+global system made by joining from the
+smaller and
+
+34
+00:01:52,400 --> 00:01:54,500
+independent computer network together.
+
+35
+00:01:55,140 --> 00:01:56,800
+Or you can say as the--
+
+36
+00:01:57,780 --> 00:02:01,680
+It's made of many separate computer
+networks connect together around the
+
+37
+00:02:01,740 --> 00:02:05,660
+world, and also the way
+that bi-billions of device
+
+38
+00:02:05,740 --> 00:02:09,620
+can communicate because of individual
+networks are connected
+
+39
+00:02:09,660 --> 00:02:12,280
+together,
+and routers use shared protocol
+
+40
+00:02:12,640 --> 00:02:13,180
+and address
+
+41
+00:02:13,720 --> 00:02:16,840
+to direct data packet to the correct
+destination.
+
+42
+00:02:17,080 --> 00:02:20,600
+In the network, we will have two main,
+
+43
+00:02:21,320 --> 00:02:23,480
+uh, device or layers,
+
+44
+00:02:24,360 --> 00:02:28,200
+uh, that been used. One
+is the end system or...
+
+45
+00:02:28,840 --> 00:02:32,680
+and the other one is a host.
+So here we will have some example
+
+46
+00:02:32,780 --> 00:02:34,220
+for end system and host.
+
+47
+00:02:35,460 --> 00:02:37,520
+Here we have a laptop or, and desktop,
+
+48
+00:02:38,520 --> 00:02:40,000
+smartphone, tablet,
+
+49
+00:02:41,620 --> 00:02:45,160
+physical servers, cloud system,
+or virtual machine,
+
+50
+00:02:45,820 --> 00:02:47,920
+or containers. So for a laptop,
+
+51
+00:02:48,740 --> 00:02:52,560
+it can be understand as a client or node,
+and the network is
+
+52
+00:02:52,640 --> 00:02:53,860
+fully used, the,
+
+53
+00:02:55,080 --> 00:02:55,660
+to connect it
+
+54
+00:02:56,620 --> 00:02:59,720
+through the protocol wi-- uh, called TCP
+
+55
+00:03:00,420 --> 00:03:04,220
+or the stack of the IP through Wi-Fi
+
+56
+00:03:04,320 --> 00:03:08,300
+as a wireless connection, or Ethernet
+is the physical connection
+
+57
+00:03:08,700 --> 00:03:12,680
+or wired connection.
+The general purpose of it is the,
+
+58
+00:03:13,260 --> 00:03:14,260
+uh, co-computing,
+
+59
+00:03:15,120 --> 00:03:18,000
+web browsing, or local software execution.
+
+60
+00:03:19,420 --> 00:03:23,080
+Same as sm-smartphone or tablet,
+but it can--
+
+61
+00:03:23,600 --> 00:03:27,500
+it's been called as a mobile client
+because it's still
+
+62
+00:03:27,580 --> 00:03:30,860
+a full TCP/IP stack, but it's only
+
+63
+00:03:31,660 --> 00:03:34,940
+support for wireless connection like
+cellular and Wi-Fi.
+
+64
+00:03:35,080 --> 00:03:38,800
+So with the purpose of that,
+we can go on the media access,
+
+65
+00:03:39,220 --> 00:03:42,740
+app driving communication,
+location services,
+
+66
+00:03:43,560 --> 00:03:46,880
+or you can easily understand
+that you're using social media on your
+
+67
+00:03:46,920 --> 00:03:47,080
+phone.
+
+68
+00:03:47,420 --> 00:03:51,160
+Then we will have the host part
+is the physical servers
+
+69
+00:03:51,940 --> 00:03:55,860
+or data center. With the purpose of that,
+they using to host and
+
+70
+00:03:55,920 --> 00:03:57,800
+provider the services.
+
+71
+00:03:58,840 --> 00:04:02,800
+It's required the higher bandwidth
+and heavily
+
+72
+00:04:02,940 --> 00:04:06,540
+used on network,
+so it's normally connect with the fiber
+
+73
+00:04:06,620 --> 00:04:08,340
+interconnect to
+
+74
+00:04:09,340 --> 00:04:13,300
+keep the networking or the network, uh,
+data transfer
+
+75
+00:04:13,380 --> 00:04:17,320
+be stabilized and safe.
+Physical server can
+
+76
+00:04:17,360 --> 00:04:21,040
+dedicate as a compute engine hosting the
+website, database,
+
+77
+00:04:21,380 --> 00:04:25,140
+and enterprise services. Next is the cloud
+
+78
+00:04:25,220 --> 00:04:28,920
+system or the virtual machine
+that sit on the
+
+79
+00:04:29,120 --> 00:04:31,380
+s-physical servers where we
+
+80
+00:04:32,180 --> 00:04:35,420
+or the end user or the enterprise can
+virtually hosting it.
+
+81
+00:04:35,560 --> 00:04:39,380
+The connection is using the
+software-defined network, uh, uh,
+
+82
+00:04:39,580 --> 00:04:43,460
+called as the SDN.
+So with the purpose of that, they used
+
+83
+00:04:43,500 --> 00:04:47,460
+to virtualize server instance running on
+top of the physical
+
+84
+00:04:47,500 --> 00:04:48,960
+data center, center,
+
+85
+00:04:50,080 --> 00:04:53,340
+uh, infrastructure
+or the physical being host locally.
+
+86
+00:04:53,740 --> 00:04:57,480
+So we will talk about some example of a
+real world,
+
+87
+00:04:57,740 --> 00:05:01,500
+how the data, uh, can receiving
+and transferring,
+
+88
+00:05:02,520 --> 00:05:03,640
+uh, through the Internet.
+
+89
+00:05:04,840 --> 00:05:06,780
+So just a fresh
+
+90
+00:05:07,640 --> 00:05:09,280
+understanding is the,
+
+91
+00:05:10,340 --> 00:05:12,780
+uh, router Wi-Fi, where it's been
+
+92
+00:05:13,980 --> 00:05:15,740
+sit on every single home now,
+
+93
+00:05:16,660 --> 00:05:18,320
+where you can connect wireless
+
+94
+00:05:19,840 --> 00:05:22,680
+for gaming, music, streaming,
+
+95
+00:05:23,680 --> 00:05:25,160
+uh, email, et cetera.
+
+96
+00:05:26,060 --> 00:05:29,680
+Then we will have the, uh,
+station for cellular,
+
+97
+00:05:30,540 --> 00:05:34,460
+where you can have the 5G
+or 6G signal in the long
+
+98
+00:05:34,520 --> 00:05:36,300
+range. You,
+you don't have to worry about the
+
+99
+00:05:36,340 --> 00:05:36,900
+connection.
+
+100
+00:05:37,220 --> 00:05:40,460
+And then we will have the Ethernet
+or the fiber
+
+101
+00:05:40,920 --> 00:05:44,620
+connection.
+It's like a cable insert in your
+
+102
+00:05:44,680 --> 00:05:47,940
+router or under the network system,
+
+103
+00:05:49,720 --> 00:05:50,060
+where
+
+104
+00:05:51,420 --> 00:05:54,020
+it's more stable and the high bandwidth,
+
+105
+00:05:55,640 --> 00:05:58,100
+and you don't have to share the bandwidth
+with the other
+
+106
+00:05:59,140 --> 00:06:01,760
+when you access or using the fiber
+
+107
+00:06:02,640 --> 00:06:03,420
+or Ethernet signal.
+
+108
+00:06:05,248 --> 00:06:08,868
+And then that's all for the, uh,
+foundation for
+
+109
+00:06:08,908 --> 00:06:10,568
+understanding the basic of the
+
+110
+00:06:11,368 --> 00:06:14,028
+network.
+And now we go to the network edge
+
+111
+00:06:14,508 --> 00:06:15,208
+and the network
+
+112
+00:06:15,268 --> 00:06:15,688
+core.
+
+113
+00:06:17,508 --> 00:06:19,228
+So for the network edge,
+
+114
+00:06:21,008 --> 00:06:24,328
+as we talk about the host
+and an end system,
+
+115
+00:06:26,208 --> 00:06:29,428
+so we will-- in the network edge,
+it will call
+
+116
+00:06:29,588 --> 00:06:31,508
+as the client and server.
+
+117
+00:06:32,568 --> 00:06:36,068
+And the definition of the network edge
+is the part
+
+118
+00:06:36,188 --> 00:06:39,108
+of the network architecture where user
+
+119
+00:06:39,948 --> 00:06:43,088
+and end devices interface with the
+internet.
+
+120
+00:06:43,288 --> 00:06:46,808
+It is decentralized, diverse,
+and focused on
+
+121
+00:06:46,908 --> 00:06:48,408
+access and local service.
+
+122
+00:06:49,248 --> 00:06:52,768
+So there is flit- split in two
+is client server.
+
+123
+00:06:52,908 --> 00:06:55,808
+So for the clients, the device
+is normally,
+
+124
+00:06:56,848 --> 00:07:00,768
+uh, claim as request information
+or update information
+
+125
+00:07:00,848 --> 00:07:04,588
+to the server. For example, a laptop,
+smartphone, PC, wireless tablet,
+
+126
+00:07:04,848 --> 00:07:08,828
+IoT devices. Example of the action
+is normally you do the
+
+127
+00:07:08,888 --> 00:07:12,808
+web browsing, go on the social media,
+upload the
+
+128
+00:07:12,868 --> 00:07:15,248
+post, or update the, your information.
+
+129
+00:07:15,708 --> 00:07:19,328
+For the server,
+it's require more powerful to
+
+130
+00:07:19,388 --> 00:07:21,948
+handling multi connection in one server.
+
+131
+00:07:22,308 --> 00:07:26,088
+So the power of machine
+that able to store and provide
+
+132
+00:07:26,148 --> 00:07:29,988
+service to the clients
+while many server live in a massive
+
+133
+00:07:30,028 --> 00:07:32,628
+data center deep within the network core.
+
+134
+00:07:32,868 --> 00:07:36,808
+For example, the web server, datas-
+database servers,
+
+135
+00:07:36,988 --> 00:07:40,768
+application server. The other rule of
+
+136
+00:07:40,848 --> 00:07:44,368
+that is the hosting on AWS,
+
+137
+00:07:44,868 --> 00:07:48,748
+where you can put your code on or the,
+or the
+
+138
+00:07:48,768 --> 00:07:52,068
+website on, and then it will host.
+So many other people can
+
+139
+00:07:52,848 --> 00:07:55,168
+go in yours or GitHub, where you can
+
+140
+00:07:55,968 --> 00:07:58,108
+GitHub,
+and they will have their Git server to
+
+141
+00:07:58,188 --> 00:07:59,708
+store all of the code
+
+142
+00:07:59,768 --> 00:08:00,508
+base. Then
+
+143
+00:08:01,388 --> 00:08:05,248
+now we have to talk about the access
+networks.
+
+144
+00:08:05,748 --> 00:08:09,688
+An access network is the physical link
+that connect a
+
+145
+00:08:09,788 --> 00:08:13,668
+host to the first router,
+also known as the edge
+
+146
+00:08:13,848 --> 00:08:17,388
+router of the ISP network. The ne-
+
+147
+00:08:17,768 --> 00:08:19,048
+access network is often
+
+148
+00:08:20,108 --> 00:08:22,708
+the bottleneck in term of the bandwidth.
+
+149
+00:08:23,028 --> 00:08:26,308
+So why we can call it as the
+
+150
+00:08:26,748 --> 00:08:29,668
+bottleneck? Because it's the very end
+
+151
+00:08:30,028 --> 00:08:33,388
+before it's connect to your laptop or...
+
+152
+00:08:33,808 --> 00:08:37,728
+So for the home network, we will--
+they will provide the internet
+
+153
+00:08:37,808 --> 00:08:40,928
+access within the, for the resident
+
+154
+00:08:41,728 --> 00:08:43,968
+and normally used as the home router
+
+155
+00:08:44,848 --> 00:08:48,228
+or the modem Wi-Fi access for the either
+way
+
+156
+00:08:48,408 --> 00:08:51,068
+combined to the one thing with all
+purpose.
+
+157
+00:08:51,328 --> 00:08:54,748
+For the enterprise,
+it's the network connect user within a
+
+158
+00:08:54,788 --> 00:08:55,248
+company
+
+159
+00:08:55,508 --> 00:08:56,848
+or a university setting.
+
+160
+00:08:57,668 --> 00:09:01,588
+Ethernet sw- it have the Ethernet switch,
+wireless access
+
+161
+00:09:01,728 --> 00:09:02,068
+point,
+
+162
+00:09:02,888 --> 00:09:05,588
+enterprise-grade firewall,
+and internal server.
+
+163
+00:09:05,848 --> 00:09:09,568
+So this can provide all of the local
+devices or any
+
+164
+00:09:09,948 --> 00:09:13,428
+local devices before it go through the
+network core,
+
+165
+00:09:13,988 --> 00:09:14,948
+go in the network core.
+
+166
+00:09:16,368 --> 00:09:17,608
+And finally, it's a mobile.
+
+167
+00:09:18,508 --> 00:09:22,428
+It's using for wide range network,
+use cellular technology to
+
+168
+00:09:22,468 --> 00:09:25,548
+provide the wireless access over large
+area,
+
+169
+00:09:26,428 --> 00:09:29,788
+4G or 5G radio access network, and mobile
+
+170
+00:09:29,828 --> 00:09:33,708
+devices.
+Then we will talk about the network core.
+
+171
+00:09:34,228 --> 00:09:36,128
+It's the Internet backbone where
+
+172
+00:09:36,968 --> 00:09:40,768
+s- single, uh,
+network core connecting together create
+
+173
+00:09:40,828 --> 00:09:44,268
+the huge system of the network layers from
+country to
+
+174
+00:09:44,328 --> 00:09:46,068
+countries, city to cities.
+
+175
+00:09:48,268 --> 00:09:52,088
+Yeah. The network core
+is the backbone of the Internet.
+
+176
+00:09:52,348 --> 00:09:56,328
+It's all purpose to provide the high
+speed, reliable transport
+
+177
+00:09:56,408 --> 00:09:59,428
+of data packets over long distance,
+
+178
+00:10:00,308 --> 00:10:04,068
+connecting many different access networks
+
+179
+00:10:04,108 --> 00:10:07,328
+together. So in the network core, you will
+
+180
+00:10:07,848 --> 00:10:11,508
+have the single part
+that using for different
+
+181
+00:10:11,568 --> 00:10:14,848
+purposes. We have the routers
+or core routers.
+
+182
+00:10:15,428 --> 00:10:18,968
+It's made to specialize in high-capacity
+router that
+
+183
+00:10:19,068 --> 00:10:22,888
+interconnect standard access network
+and other
+
+184
+00:10:22,988 --> 00:10:23,587
+ISPs.
+
+185
+00:10:24,608 --> 00:10:28,488
+They focus on the router packet between
+different networks
+
+186
+00:10:28,568 --> 00:10:32,528
+rather than connecting directly,
+directly to end device.
+
+187
+00:10:32,768 --> 00:10:36,448
+Switch is the core switch. It's m- able to
+
+188
+00:10:36,528 --> 00:10:38,828
+handling large amount and higher,
+
+189
+00:10:39,788 --> 00:10:42,948
+uh, bandwidth.
+So it's a high-performance switch
+
+190
+00:10:43,388 --> 00:10:47,108
+used within the data center
+or between the router to
+
+191
+00:10:47,168 --> 00:10:49,428
+manage the high-speed physical connection.
+
+192
+00:10:49,748 --> 00:10:53,488
+The physical medium connecting these
+device, primarily
+
+193
+00:10:53,568 --> 00:10:55,488
+high-capacity fiber optic cable.
+
+194
+00:10:55,848 --> 00:10:59,768
+So you can understand as the network core
+is like a server,
+
+195
+00:11:00,068 --> 00:11:03,628
+but shipping station
+that collecting all of the
+
+196
+00:11:03,688 --> 00:11:07,168
+shipping from your home,
+transfer it to the designate,
+
+197
+00:11:07,528 --> 00:11:10,268
+uh,
+address that you're already assigned for.
+
+198
+00:11:10,328 --> 00:11:13,868
+So to understand more in the network,
+
+199
+00:11:14,388 --> 00:11:17,828
+it's not only about the network edge
+or core, it's
+
+200
+00:11:17,908 --> 00:11:21,808
+also, uh,
+packet or data been traveling through
+
+201
+00:11:21,848 --> 00:11:25,268
+the network.
+We will have to know about the,
+
+202
+00:11:25,788 --> 00:11:29,688
+uh, packet traveling method,
+where the data transferring
+
+203
+00:11:29,728 --> 00:11:33,428
+through from your devices to, um,
+designate
+
+204
+00:11:33,528 --> 00:11:36,708
+server or through all of the network
+system.
+
+205
+00:11:36,888 --> 00:11:40,248
+So we have, uh, four thing.
+Packet switching is
+
+206
+00:11:40,908 --> 00:11:44,408
+one of the method, is the data
+is gonna be broken down into
+
+207
+00:11:44,468 --> 00:11:47,988
+small or discrete block called packets.
+
+208
+00:11:48,388 --> 00:11:51,768
+Each packet contain destination address
+
+209
+00:11:52,488 --> 00:11:56,268
+in its header.
+The router examine the header
+
+210
+00:11:56,528 --> 00:11:59,268
+f- of each packet independently to
+
+211
+00:11:59,308 --> 00:12:03,288
+determine the best outgoing link.
+
+212
+00:12:03,508 --> 00:12:07,448
+So the data, like for your photos,
+when you're sending
+
+213
+00:12:07,508 --> 00:12:08,088
+to your friend,
+
+214
+00:12:08,928 --> 00:12:12,796
+it's not transferring the whole thing
+Right away, it's break down
+
+215
+00:12:12,856 --> 00:12:16,776
+to small piece and each piece connect
+together and it's go the same, or
+
+216
+00:12:16,816 --> 00:12:20,336
+the, the go to the same address. Uh,
+so the internet is
+
+217
+00:12:20,416 --> 00:12:24,356
+the no dedicated path or,
+or reserve bandwidth.
+
+218
+00:12:24,436 --> 00:12:27,796
+So the packet switching
+is used by the internet,
+
+219
+00:12:28,716 --> 00:12:31,456
+no dedicated path and
+or reserve bandwidth.
+
+220
+00:12:31,736 --> 00:12:34,856
+The bandwidth is used on-demand
+statistical
+
+221
+00:12:35,576 --> 00:12:38,736
+multiplexing. This is more efficient
+
+222
+00:12:39,176 --> 00:12:42,776
+for perceived traffic
+and such as web browsing or email.
+
+223
+00:12:43,376 --> 00:12:46,476
+Because we're using the public network
+system, so
+
+224
+00:12:46,856 --> 00:12:50,596
+there's multiple connection happening in
+the network
+
+225
+00:12:50,636 --> 00:12:54,556
+system. So,
+and you will have multiple route
+
+226
+00:12:54,656 --> 00:12:58,456
+or multiple way to get into your, uh,
+address.
+
+227
+00:12:58,656 --> 00:13:02,616
+Will have used to based on demand, and
+
+228
+00:13:02,676 --> 00:13:03,116
+we will
+
+229
+00:13:03,976 --> 00:13:05,056
+let you know where
+
+230
+00:13:06,196 --> 00:13:10,136
+this way is full of traffic or not.
+And then is the other way of
+
+231
+00:13:10,196 --> 00:13:11,596
+method is the circuit switching.
+
+232
+00:13:12,616 --> 00:13:13,376
+A dedicated
+
+233
+00:13:14,536 --> 00:13:15,496
+end-to-end path,
+
+234
+00:13:16,756 --> 00:13:20,336
+uh, is ex-established between the
+
+235
+00:13:20,436 --> 00:13:23,256
+sender and receiver before any data
+transmitted.
+
+236
+00:13:24,676 --> 00:13:28,516
+So this method is been used by the legacy
+
+237
+00:13:28,576 --> 00:13:29,316
+telephone network.
+
+238
+00:13:30,316 --> 00:13:34,056
+So the bandwidth is reserved exclusively
+for that
+
+239
+00:13:34,116 --> 00:13:36,736
+connection and its entire duration.
+
+240
+00:13:36,976 --> 00:13:39,196
+While this guarantees performance,
+
+241
+00:13:40,356 --> 00:13:44,216
+it is highly in-efficient
+if the connection
+
+242
+00:13:44,296 --> 00:13:48,036
+is idle. So the,
+the difference between two is one
+
+243
+00:13:48,136 --> 00:13:51,916
+is for breaking down data
+and one for reserving one way only
+
+244
+00:13:52,556 --> 00:13:54,716
+for the consistent data transferring.
+
+245
+00:13:55,236 --> 00:13:58,836
+So now we're gonna go to show the diagram
+of the network edge and the network
+
+246
+00:13:58,896 --> 00:14:02,736
+core. So here you can see is a diagram,
+gram
+
+247
+00:14:02,816 --> 00:14:03,896
+of the network edge.
+
+248
+00:14:04,776 --> 00:14:08,236
+We will use the home access network as a
+sample
+
+249
+00:14:09,036 --> 00:14:12,456
+to easily to understand and visualize,
+'cause
+
+250
+00:14:12,596 --> 00:14:16,516
+everyone will have it.
+So the home router will
+
+251
+00:14:16,596 --> 00:14:20,295
+handling all everything.
+It will providing the Ethernet.
+
+252
+00:14:21,256 --> 00:14:25,156
+Uh, it will connect with your PC
+or desktop through Ethernet
+
+253
+00:14:25,216 --> 00:14:29,056
+or Wi-Fi, and laptop with Wi-Fi
+or Ethernet, and then your
+
+254
+00:14:29,116 --> 00:14:31,276
+smartphone will have a Wi-Fi router for
+it.
+
+255
+00:14:31,936 --> 00:14:35,456
+And the network printer,
+you have Wi-Fi and IoT, like smart
+
+256
+00:14:36,196 --> 00:14:39,756
+thermostat or the cameras will, will,
+will be
+
+257
+00:14:39,816 --> 00:14:40,516
+connect in,
+
+258
+00:14:41,556 --> 00:14:43,616
+connecting together through your home
+router.
+
+259
+00:14:44,196 --> 00:14:47,076
+And from the home router,
+you have the Ethernet connection through
+
+260
+00:14:47,116 --> 00:14:47,976
+the modem DSL
+
+261
+00:14:48,056 --> 00:14:51,636
+cable or coax phone line. It will
+
+262
+00:14:51,736 --> 00:14:52,176
+send...
+
+263
+00:14:53,016 --> 00:14:56,536
+These three will connecting together to
+the ISP edge router,
+
+264
+00:14:57,076 --> 00:15:00,516
+which will connect to the c-network
+
+265
+00:15:00,596 --> 00:15:04,356
+core in your local area.
+And then the local area
+
+266
+00:15:04,396 --> 00:15:08,356
+will send with the other network core in
+the different area b-based on
+
+267
+00:15:08,936 --> 00:15:12,456
+the connection. And so this is the, uh,
+basic
+
+268
+00:15:12,516 --> 00:15:16,216
+diagram to understand how the connection
+between,
+
+269
+00:15:17,096 --> 00:15:20,756
+uh, the end device or loc--
+or home device connecting
+
+270
+00:15:20,796 --> 00:15:24,776
+together. And then we gonna do to show the
+
+271
+00:15:24,916 --> 00:15:25,876
+network core.
+
+272
+00:15:30,216 --> 00:15:33,956
+So for the network core, after sending,
+for example, you
+
+273
+00:15:34,276 --> 00:15:38,136
+have the laptop here,
+you sending the message to your
+
+274
+00:15:38,236 --> 00:15:42,156
+friend. It's going through the net-
+your home network
+
+275
+00:15:42,236 --> 00:15:45,396
+access first,
+and then go through the network core where
+
+276
+00:15:45,436 --> 00:15:45,516
+the
+
+277
+00:15:45,636 --> 00:15:46,456
+ISP,
+
+278
+00:15:47,336 --> 00:15:50,716
+ISP network. It will handling all of the,
+
+279
+00:15:51,156 --> 00:15:55,016
+uh, sending through all the core router A,
+sending
+
+280
+00:15:55,056 --> 00:15:58,996
+to B if it's closer,
+or sending through the, uh,
+
+281
+00:15:59,196 --> 00:16:02,436
+application server where you under--
+where you can
+
+282
+00:16:03,096 --> 00:16:05,696
+know all this one,
+sending through the social media
+
+283
+00:16:06,176 --> 00:16:06,696
+and the cloud
+
+284
+00:16:06,816 --> 00:16:09,256
+storage or the database server to store
+the,
+
+285
+00:16:10,156 --> 00:16:13,836
+your message,
+and then send back again to update
+
+286
+00:16:13,956 --> 00:16:17,696
+on your screen and send another to your
+
+287
+00:16:18,596 --> 00:16:20,776
+friend. So this
+
+288
+00:16:22,236 --> 00:16:25,836
+core router, if you know,
+is you can see is connecting together
+
+289
+00:16:26,656 --> 00:16:27,675
+A to B, B to C,
+
+290
+00:16:28,536 --> 00:16:31,736
+or s- or different l- different way,
+but it will,
+
+291
+00:16:32,796 --> 00:16:36,756
+uh, locating or understand is, as, uh,
+you can multiply it,
+
+292
+00:16:37,336 --> 00:16:40,816
+or hundreds of that or millions of
+that in surround the world.
+
+293
+00:16:42,196 --> 00:16:45,356
+Now we're going back to the communication
+and network,
+
+294
+00:16:46,436 --> 00:16:47,276
+uh, protocol.
+
+295
+00:16:48,316 --> 00:16:51,996
+So we have known the diagram
+and layers of the network,
+
+296
+00:16:53,016 --> 00:16:55,636
+uh,
+that have been used in the network system,
+
+297
+00:16:56,596 --> 00:17:00,476
+and but we don't know how it communicate,
+communicate
+
+298
+00:17:00,536 --> 00:17:04,336
+to each other and how they understand
+where to go and,
+
+299
+00:17:05,156 --> 00:17:09,136
+and what way for the efficient
+and correct path
+
+300
+00:17:09,216 --> 00:17:12,176
+for it. So in the network protocol,
+
+301
+00:17:13,096 --> 00:17:16,776
+as the d-definition,
+is the agreed-upon set of
+
+302
+00:17:16,836 --> 00:17:19,196
+rules, format, and convention that govern
+
+303
+00:17:20,076 --> 00:17:24,016
+how data is formatted, transmitted,
+routed, received
+
+304
+00:17:24,116 --> 00:17:28,056
+across interconnected system,
+including your home
+
+305
+00:17:28,116 --> 00:17:28,716
+devices.
+
+306
+00:17:29,816 --> 00:17:31,556
+So we will have, uh,
+
+307
+00:17:33,996 --> 00:17:36,616
+the HTTP or HTTPS
+
+308
+00:17:37,956 --> 00:17:41,556
+is the purpose of define how message
+format and
+
+309
+00:17:41,616 --> 00:17:43,376
+transmit it for the fetching the web
+
+310
+00:17:44,576 --> 00:17:45,096
+resource.
+
+311
+00:17:45,976 --> 00:17:49,536
+And, uh, the layers of that
+is they operate at
+
+312
+00:17:49,596 --> 00:17:51,016
+the application layer.
+
+313
+00:17:52,076 --> 00:17:54,016
+Then is the TCP to
+
+314
+00:17:55,276 --> 00:17:58,536
+p-provide the reliable order
+and error check
+
+315
+00:17:59,316 --> 00:18:03,076
+gu- the delivery of, of a stream or
+
+316
+00:18:03,156 --> 00:18:03,616
+offset
+
+317
+00:18:04,916 --> 00:18:07,036
+between the application running on host.
+
+318
+00:18:07,736 --> 00:18:08,276
+The layer
+
+319
+00:18:09,196 --> 00:18:12,316
+of that is they operated at the transport
+layer.
+
+320
+00:18:12,916 --> 00:18:13,836
+Then the IP
+
+321
+00:18:14,764 --> 00:18:18,244
+Address, the pur is responsible for
+
+322
+00:18:18,344 --> 00:18:22,224
+addressing the node
+and routing discrete data
+
+323
+00:18:22,304 --> 00:18:25,824
+packet and operate at the network layer.
+
+324
+00:18:26,024 --> 00:18:29,624
+And DNS is the translation,
+the human readable into the
+
+325
+00:18:29,684 --> 00:18:33,664
+machine routable IP address, and it's, uh,
+operated
+
+326
+00:18:33,764 --> 00:18:37,664
+at the application. Later on,
+where I will show the example of
+
+327
+00:18:37,724 --> 00:18:41,524
+these four interacting,
+but now we're gonna go next to
+
+328
+00:18:41,784 --> 00:18:45,684
+the diagram to understand the purpose
+and the layer
+
+329
+00:18:45,744 --> 00:18:47,824
+that we already mentioned from above.
+
+330
+00:18:48,484 --> 00:18:52,244
+So this layer is the, can understand as
+
+331
+00:18:52,324 --> 00:18:55,964
+the OSI layers, where you can go from the
+
+332
+00:18:55,984 --> 00:18:59,904
+physical is the, of the device,
+physical device
+
+333
+00:18:59,984 --> 00:19:03,464
+that been used in a network system like
+fiber, link, switch,
+
+334
+00:19:03,664 --> 00:19:04,044
+router,
+
+335
+00:19:05,044 --> 00:19:05,064
+uh,
+
+336
+00:19:05,944 --> 00:19:08,184
+uh, cellular station or et cetera.
+
+337
+00:19:08,944 --> 00:19:11,284
+And then the data link
+is a physical addressing
+
+338
+00:19:12,484 --> 00:19:15,244
+and a network and a path de-determination.
+
+339
+00:19:16,264 --> 00:19:19,744
+And then they, they go into the transport,
+reliable data transferring,
+
+340
+00:19:19,824 --> 00:19:20,284
+managing
+
+341
+00:19:21,284 --> 00:19:21,884
+connection,
+
+342
+00:19:23,584 --> 00:19:26,084
+and presentation,
+the data translation befr-
+
+343
+00:19:26,084 --> 00:19:26,864
+right before the
+
+344
+00:19:26,944 --> 00:19:29,584
+application used to show the visualize.
+
+345
+00:19:30,764 --> 00:19:34,364
+And we will have eight different network
+protocols
+
+346
+00:19:34,444 --> 00:19:38,104
+to, and purpose,
+with the purpose to transferring
+
+347
+00:19:38,144 --> 00:19:38,504
+data.
+
+348
+00:19:39,784 --> 00:19:43,504
+Um, we have HTTP, HTTPS,
+
+349
+00:19:43,864 --> 00:19:47,804
+WebSocket, TCP, UDP, SMTP, and FTP.
+
+350
+00:19:48,684 --> 00:19:52,344
+Each of the connection have a different
+purpose and, uh, different advantage.
+
+351
+00:19:52,904 --> 00:19:56,564
+We have showed a diagram,
+so now we're gonna go to sample real
+
+352
+00:19:57,504 --> 00:20:01,484
+interact,
+explain how server protocol work together
+
+353
+00:20:01,544 --> 00:20:04,944
+to make the activity possible.
+So here I will,
+
+354
+00:20:05,564 --> 00:20:06,604
+I will inspect this one
+
+355
+00:20:07,464 --> 00:20:08,284
+in order to
+
+356
+00:20:09,284 --> 00:20:10,704
+search and do order.
+
+357
+00:20:10,904 --> 00:20:15,704
+[keyboard clacking]
+
+358
+00:20:15,744 --> 00:20:17,104
+So we let's see,
+
+359
+00:20:18,944 --> 00:20:20,164
+uh, network.
+
+360
+00:20:23,624 --> 00:20:25,504
+It's where you're sending out the data
+
+361
+00:20:26,504 --> 00:20:29,144
+to search on web browsing. So
+
+362
+00:20:30,324 --> 00:20:34,024
+after we send a network,
+you will see here m- multiple
+
+363
+00:20:34,084 --> 00:20:36,104
+fetching from the data, from the server.
+
+364
+00:20:37,144 --> 00:20:38,824
+Uh, we will have to
+
+365
+00:20:42,124 --> 00:20:42,344
+see,
+
+366
+00:20:43,924 --> 00:20:46,964
+uh, payload, respond, initiator,
+
+367
+00:20:50,364 --> 00:20:52,844
+review.
+So you can see here where the code
+
+368
+00:20:53,164 --> 00:20:54,044
+implemen-
+
+369
+00:20:54,484 --> 00:20:56,744
+uh, implement. That's where the
+
+370
+00:20:57,864 --> 00:21:01,764
+translator, the data translation do
+when we
+
+371
+00:21:01,824 --> 00:21:03,784
+receiving the connection.
+
+372
+00:21:03,804 --> 00:21:24,084
+[keyboard clacking]
+
+373
+00:21:24,244 --> 00:21:27,944
+And from the network,
+let me take a look for the API call.
+
+374
+00:21:29,624 --> 00:21:33,084
+So the API call the, the DNS.
+
+375
+00:21:33,664 --> 00:21:37,344
+The DNS is the Google lead or YouTube,
+
+376
+00:21:38,384 --> 00:21:41,664
+et cetera, and getting the link out here.
+
+377
+00:21:42,444 --> 00:21:42,704
+Um,
+
+378
+00:21:45,024 --> 00:21:48,604
+it's the easy to understand, but however,
+
+379
+00:21:48,984 --> 00:21:52,544
+in the foreign people to read, but for,
+
+380
+00:21:53,904 --> 00:21:54,664
+for, uh,
+
+381
+00:21:55,484 --> 00:21:58,704
+computer is a different way.
+So we're gonna do
+
+382
+00:21:58,724 --> 00:22:02,604
+[keyboard clacking]
+
+383
+00:22:02,644 --> 00:22:05,364
+Google IP address.
+
+384
+00:22:07,044 --> 00:22:10,704
+So you can see here the Google IP address
+is A
+
+385
+00:22:10,804 --> 00:22:11,064
+eight.
+
+386
+00:22:13,004 --> 00:22:16,024
+So if you searching for a
+
+387
+00:22:16,624 --> 00:22:19,004
+google.com...
+
+388
+00:22:24,764 --> 00:22:25,484
+Wait, hold on.
+
+389
+00:22:41,284 --> 00:22:45,164
+It will call as the,
+call the API to get the data,
+
+390
+00:22:46,124 --> 00:22:49,944
+but it's transferring in the remote access
+is the IP address here.
+
+391
+00:22:51,124 --> 00:22:52,124
+And we will...
+
+392
+00:22:56,864 --> 00:23:00,124
+And each of protocol accepting the,
+
+393
+00:23:00,924 --> 00:23:01,244
+the
+
+394
+00:23:02,664 --> 00:23:06,144
+searching the DNS,
+like a Google to transferring to the
+
+395
+00:23:06,484 --> 00:23:10,464
+IP address, and then the TCP will
+
+396
+00:23:10,524 --> 00:23:14,144
+getting back,
+sending out back to all of the, uh,
+
+397
+00:23:14,284 --> 00:23:17,324
+packet that need to rendering the,
+
+398
+00:23:18,624 --> 00:23:22,204
+rendering the web page
+or web browsing to visualize
+
+399
+00:23:22,784 --> 00:23:23,884
+for end user
+
+400
+00:23:25,044 --> 00:23:25,444
+working.
+
+401
+00:23:27,204 --> 00:23:28,644
+So this is a sample of that.
+
+402
+00:23:29,884 --> 00:23:33,244
+So next, we're gonna w- talking about the,
+um,
+
+403
+00:23:34,204 --> 00:23:37,464
+number four is understanding about the
+network performance.
+
+404
+00:23:37,964 --> 00:23:40,944
+So there's many factor
+that affect the network performance.
+
+405
+00:23:41,084 --> 00:23:44,804
+First is the throughput,
+where the actual rate of data successfully
+
+406
+00:23:44,904 --> 00:23:48,624
+deliver,
+deliver over the network path per unit
+
+407
+00:23:48,964 --> 00:23:52,704
+of time. The bandwidth is the theore-
+theoretical
+
+408
+00:23:52,984 --> 00:23:56,744
+maximum data carrying capacity of the
+network link and
+
+409
+00:23:56,824 --> 00:24:00,664
+measured in bit per second.
+Delay the total time required for the
+
+410
+00:24:00,824 --> 00:24:04,424
+data packet to travel from source node to
+
+411
+00:24:04,624 --> 00:24:04,824
+the,
+
+412
+00:24:05,724 --> 00:24:09,704
+to its destination. Number four,
+transmission data, the time required
+
+413
+00:24:09,744 --> 00:24:13,664
+to push all bit of packet onto the
+physical transmission medium
+
+414
+00:24:15,808 --> 00:24:19,448
+And queuing de-delay
+is the time packet spending,
+
+415
+00:24:19,948 --> 00:24:23,928
+spend waiting in a router
+or switch queue buffer
+
+416
+00:24:24,508 --> 00:24:26,388
+prior to being processed
+
+417
+00:24:27,488 --> 00:24:31,328
+and transmitted. And final
+is a packet loss, the
+
+418
+00:24:31,388 --> 00:24:35,068
+percentage or,
+or ratio of transmitting mit--
+
+419
+00:24:35,668 --> 00:24:39,128
+transmitted data packet
+that failed to reach their
+
+420
+00:24:39,188 --> 00:24:39,888
+destination.
+
+421
+00:24:41,028 --> 00:24:42,268
+Now we're gonna show
+
+422
+00:24:43,988 --> 00:24:45,068
+back to the diagram,
+
+423
+00:24:49,808 --> 00:24:50,188
+where
+
+424
+00:24:53,328 --> 00:24:54,268
+you will see.
+
+425
+00:24:55,568 --> 00:24:59,448
+So the data been transferring, um, around,
+so
+
+426
+00:24:59,488 --> 00:25:03,288
+they will have some delay because of the
+distance, the bandwidth and
+
+427
+00:25:03,368 --> 00:25:03,568
+the,
+
+428
+00:25:04,468 --> 00:25:05,228
+uh, the traffic.
+
+429
+00:25:06,708 --> 00:25:09,128
+So let's first go for the,
+
+430
+00:25:10,248 --> 00:25:12,228
+the bandwidth or the current network.
+
+431
+00:25:12,508 --> 00:25:14,148
+So we will showing up
+
+432
+00:25:15,748 --> 00:25:15,908
+the
+
+433
+00:25:17,168 --> 00:25:17,648
+network
+
+434
+00:25:18,868 --> 00:25:19,488
+speed test.
+
+435
+00:25:20,387 --> 00:25:24,308
+So this is an easy way to do,
+as you can see here, the megabits
+
+436
+00:25:25,008 --> 00:25:28,688
+per second is five or through 500.
+It's because I'm
+
+437
+00:25:28,728 --> 00:25:32,608
+currently on school,
+and we have a really great, uh,
+
+438
+00:25:33,588 --> 00:25:35,468
+router that's sending out device.
+
+439
+00:25:35,928 --> 00:25:37,888
+So you can see here is the,
+
+440
+00:25:39,568 --> 00:25:42,408
+the theory or the currents
+
+441
+00:25:43,248 --> 00:25:46,328
+after calculating for the data to
+transferring,
+
+442
+00:25:49,908 --> 00:25:52,928
+to download and upload in the same second
+
+443
+00:25:55,688 --> 00:25:59,228
+per, uh, per second,
+the megabit per second.
+
+444
+00:25:59,868 --> 00:26:03,448
+And next is the latency, is the ping
+or delay, uh,
+
+445
+00:26:03,568 --> 00:26:05,488
+between sending the data is four
+
+446
+00:26:06,428 --> 00:26:09,408
+millisecond. The server location
+is Chicago.
+
+447
+00:26:14,588 --> 00:26:18,268
+And we will try on ping. Okay?
+
+448
+00:26:19,828 --> 00:26:20,188
+So
+
+449
+00:26:21,388 --> 00:26:21,668
+here
+
+450
+00:26:22,468 --> 00:26:26,428
+we will have to ping. For example,
+we know that the eight--
+
+451
+00:26:27,428 --> 00:26:28,788
+eight eight is Google,
+
+452
+00:26:29,708 --> 00:26:32,128
+so we try to ping from our location.
+
+453
+00:26:37,328 --> 00:26:40,008
+So this is how to... How we can know that
+
+454
+00:26:40,808 --> 00:26:44,468
+reply in thirty-two byte of data.
+It take three
+
+455
+00:26:44,628 --> 00:26:45,168
+second
+
+456
+00:26:46,228 --> 00:26:49,988
+to transferring data,
+and we're sending out four, receive four,
+
+457
+00:26:50,088 --> 00:26:53,108
+and there's no loss.
+There's no loss percent in here.
+
+458
+00:26:55,508 --> 00:26:59,448
+And the min-minimum and maximum ping, the
+
+459
+00:26:59,588 --> 00:27:02,548
+delay we have is three second,
+three millisecond.
+
+460
+00:27:03,468 --> 00:27:06,368
+Maybe my, uh, application don't have it,
+but it's fine.
+
+461
+00:27:07,148 --> 00:27:08,528
+But we can go to
+
+462
+00:27:10,348 --> 00:27:11,108
+Wireshark.
+
+463
+00:27:12,508 --> 00:27:14,168
+It's another tool in
+
+464
+00:27:15,028 --> 00:27:16,248
+checking the network system.
+
+465
+00:27:17,728 --> 00:27:19,628
+It takes some time. It's my first time.
+
+466
+00:27:23,788 --> 00:27:27,688
+So let's see.
+
+467
+00:27:28,948 --> 00:27:32,088
+So you can see here the data has been
+flowing, so
+
+468
+00:27:33,168 --> 00:27:35,148
+it's kinda a lot.
+So we'll see the protocol,
+
+469
+00:27:35,228 --> 00:27:36,948
+what protocol have been used through
+
+470
+00:27:36,988 --> 00:27:37,648
+the Wi-Fi
+
+471
+00:27:38,648 --> 00:27:42,428
+and the, uh, source from we receive the IP
+
+472
+00:27:42,508 --> 00:27:45,348
+address in IPv6 or IPv4,
+
+473
+00:27:47,408 --> 00:27:50,288
+and the destination
+that we send our receiving.
+
+474
+00:27:52,408 --> 00:27:56,048
+So at the bottom here is the packet
+that been sending
+
+475
+00:27:56,168 --> 00:27:57,208
+out in data,
+
+476
+00:27:58,188 --> 00:28:00,408
+and it's breaking down through line.
+
+477
+00:28:01,768 --> 00:28:04,088
+Each line is the one packet.
+
+478
+00:28:05,968 --> 00:28:06,288
+And
+
+479
+00:28:08,528 --> 00:28:11,708
+you will see that we have a series of line
+that been sending.
+
+480
+00:28:13,108 --> 00:28:13,268
+Yep.
+
+481
+00:28:14,648 --> 00:28:15,688
+So that's a good,
+
+482
+00:28:17,088 --> 00:28:18,388
+uh... We stop it quick.
+
+483
+00:28:20,048 --> 00:28:23,968
+So this example how we, uh, looking up the
+
+484
+00:28:24,028 --> 00:28:28,008
+data transferring,
+and we can see the delay through,
+
+485
+00:28:28,448 --> 00:28:32,128
+uh, using speed test
+or testing our connection,
+
+486
+00:28:33,128 --> 00:28:33,347
+uh,
+
+487
+00:28:36,647 --> 00:28:37,828
+testing our connection.
+
+488
+00:28:39,548 --> 00:28:42,908
+So let me see if I can ping some
+
+489
+00:28:42,988 --> 00:28:44,448
+unreal connection.
+
+490
+00:28:45,908 --> 00:28:49,728
+We can use this, uh,
+pinging the data transferring.
+
+491
+00:28:51,828 --> 00:28:55,208
+Request timed out.
+We try to ping the unreal
+
+492
+00:28:55,268 --> 00:28:55,868
+connection.
+
+493
+00:28:56,748 --> 00:29:00,668
+So if the connection cannot going through,
+and they try all the way
+
+494
+00:29:00,708 --> 00:29:04,328
+to sending our data up or packet out to
+
+495
+00:29:04,388 --> 00:29:08,028
+get that, the destination, we will...
+
+496
+00:29:08,628 --> 00:29:12,228
+If it's not connect to the,
+the network system or the
+
+497
+00:29:12,468 --> 00:29:15,108
+general network sy- uh,
+public general network system,
+
+498
+00:29:15,668 --> 00:29:16,388
+it will return
+
+499
+00:29:16,448 --> 00:29:17,568
+the packet been sent
+
+500
+00:29:18,488 --> 00:29:18,808
+and
+
+501
+00:29:20,248 --> 00:29:24,188
+forward but lost all four because there no
+destination happen.
+
+502
+00:29:27,288 --> 00:29:27,588
+Okay.
+
+503
+00:29:28,948 --> 00:29:29,428
+Then,
+
+504
+00:29:30,328 --> 00:29:34,248
+and finally,
+we going to the network security.
+
+505
+00:29:35,488 --> 00:29:38,808
+So in the security concept, we have, uh,
+
+506
+00:29:39,548 --> 00:29:41,768
+six thing, is authentication,
+
+507
+00:29:42,788 --> 00:29:43,448
+encryption.
+
+508
+00:29:44,468 --> 00:29:47,568
+For authentication
+is the process of verifying the
+
+509
+00:29:47,648 --> 00:29:50,968
+id-identity of a user,
+
+510
+00:29:51,588 --> 00:29:54,908
+device,
+or process before granting network access.
+
+511
+00:29:55,068 --> 00:29:56,308
+Encryption, the
+
+512
+00:29:56,348 --> 00:30:01,748
+mathe-math-ma-mat-mathematical,
+
+513
+00:30:02,608 --> 00:30:06,588
+mathematical process of encoding plain
+text into the
+
+514
+00:30:06,668 --> 00:30:09,468
+ciphertext using cryptographic
+
+515
+00:30:10,448 --> 00:30:14,408
+key. Confidentially, confidentiality,
+
+516
+00:30:15,028 --> 00:30:18,748
+a fundamental s-pillar of security Triad
+
+517
+00:30:19,168 --> 00:30:21,408
+that ensure the sensitive data is
+
+518
+00:30:22,167 --> 00:30:24,868
+accessible only to the authorized
+
+519
+00:30:24,988 --> 00:30:27,888
+entities.
+
+520
+00:30:28,828 --> 00:30:30,728
+Network threat any potential
+
+521
+00:30:30,768 --> 00:30:33,908
+vulnerability or
+
+522
+00:30:34,788 --> 00:30:36,448
+deliberate
+
+523
+00:30:37,648 --> 00:30:40,268
+malicious action aimed at
+
+524
+00:30:40,348 --> 00:30:44,108
+disrupting operations, stealing data, or
+
+525
+00:30:44,348 --> 00:30:47,648
+gaining unauthorized access to network
+resource.
+
+526
+00:30:48,028 --> 00:30:48,328
+IP
+
+527
+00:30:48,468 --> 00:30:52,228
+snooping,
+
+528
+00:30:53,228 --> 00:30:56,748
+a technique where an attacker alter the
+source
+
+529
+00:30:57,028 --> 00:30:59,808
+address in IP packet header
+
+530
+00:31:01,868 --> 00:31:05,248
+to masquerade as the address network
+
+531
+00:31:05,328 --> 00:31:05,888
+entity.
+
+532
+00:31:07,608 --> 00:31:11,488
+Packet sniffing act the capturing and
+
+533
+00:31:11,588 --> 00:31:14,848
+analyzing raw data packet traveling across
+a
+
+534
+00:31:15,488 --> 00:31:17,608
+network using packet analysis tool.
+
+535
+00:31:19,288 --> 00:31:23,028
+So for the authentication
+and encryption is the connection where you
+
+536
+00:31:23,108 --> 00:31:24,528
+can SSH,
+
+537
+00:31:25,588 --> 00:31:28,048
+use for SSH connecting by,
+
+538
+00:31:28,948 --> 00:31:32,508
+for example, GitHub
+is the one example for SSH
+
+539
+00:31:32,568 --> 00:31:34,848
+connection.
+You put the public key on there
+
+540
+00:31:35,448 --> 00:31:36,248
+and they will do the
+
+541
+00:31:36,288 --> 00:31:40,208
+encryption to verify your authenticate to
+connect the
+
+542
+00:31:40,728 --> 00:31:42,848
+link the server of GitHub from your
+
+543
+00:31:44,208 --> 00:31:45,868
+GitHub server to your local GitHub.
+
+544
+00:31:46,308 --> 00:31:48,248
+So you can able to transferring data
+
+545
+00:31:49,848 --> 00:31:50,488
+easier.
+
+546
+00:31:54,548 --> 00:31:55,368
+Authentication
+
+547
+00:31:56,448 --> 00:31:58,168
+is logging, so you can
+
+548
+00:31:59,308 --> 00:31:59,708
+log in
+
+549
+00:32:00,568 --> 00:32:00,848
+or
+
+550
+00:32:02,008 --> 00:32:03,888
+off. You can understand like a second
+
+551
+00:32:05,468 --> 00:32:09,128
+step of authenticate.
+You need to put the number in or the
+
+552
+00:32:09,428 --> 00:32:12,848
+password and username to verify
+that you are
+
+553
+00:32:13,988 --> 00:32:17,868
+connect to the,
+that you verify to connect to the
+
+554
+00:32:17,928 --> 00:32:21,728
+services. If not,
+you will check otherwise and
+
+555
+00:32:21,828 --> 00:32:25,408
+it will send out the key so you can keep
+it while you're using it.
+
+556
+00:32:26,188 --> 00:32:27,527
+Then we will talk about the
+
+557
+00:32:29,388 --> 00:32:33,308
+network threat.
+You will see some stealing data that
+
+558
+00:32:33,388 --> 00:32:34,488
+from the
+
+559
+00:32:39,848 --> 00:32:43,508
+Gmail or scam message where they sending
+out data
+
+560
+00:32:44,088 --> 00:32:48,008
+that have a unreal thing
+or they will have a link where
+
+561
+00:32:48,288 --> 00:32:52,248
+they can fake the website,
+make you to log in and
+
+562
+00:32:52,288 --> 00:32:53,688
+they can get the access
+
+563
+00:32:57,928 --> 00:32:59,748
+by the mistake that you're typing out.
+
+564
+00:33:00,428 --> 00:33:04,068
+IP snooping or packet sniffing
+is the same as
+
+565
+00:33:04,148 --> 00:33:07,748
+the way that I show on the
+
+566
+00:33:07,788 --> 00:33:11,748
+Wireshark where you can see all the data
+transferring
+
+567
+00:33:11,808 --> 00:33:14,128
+in your local or on the network router
+
+568
+00:33:15,728 --> 00:33:18,248
+around and then you can from there you can
+
+569
+00:33:19,228 --> 00:33:20,068
+bring back the,
+
+570
+00:33:21,048 --> 00:33:24,628
+translate back the data
+that been shared or sent
+
+571
+00:33:25,508 --> 00:33:27,128
+through the unsecure
+
+572
+00:33:28,568 --> 00:33:29,008
+protocol.
+
+573
+00:33:31,288 --> 00:33:34,828
+So how we can defend the network
+
+574
+00:33:34,868 --> 00:33:38,568
+security that it was the purpose of the
+protect your
+
+575
+00:33:38,608 --> 00:33:42,548
+data and preserve system availability and
+
+576
+00:33:42,628 --> 00:33:45,968
+shield the sensitive information from
+unauthorized access.
+
+577
+00:33:46,728 --> 00:33:48,388
+So we will have many layers
+
+578
+00:33:49,348 --> 00:33:50,968
+to against the
+
+579
+00:33:52,408 --> 00:33:56,008
+hackers or the one
+that want to get your private
+
+580
+00:33:56,048 --> 00:33:57,888
+information. First is a firewall.
+
+581
+00:33:58,448 --> 00:33:59,888
+Firewalls is the
+
+582
+00:34:00,868 --> 00:34:04,728
+perimeter control
+and filtering inspect incoming and
+
+583
+00:34:04,788 --> 00:34:07,768
+outgoing network traffic based on the
+
+584
+00:34:08,588 --> 00:34:12,128
+predefined security rules to block the
+
+585
+00:34:12,188 --> 00:34:15,708
+unauthorized connection and
+
+586
+00:34:16,168 --> 00:34:17,528
+malicious protocol.
+
+587
+00:34:18,448 --> 00:34:20,648
+Next is the virtual private
+
+588
+00:34:21,688 --> 00:34:25,188
+network. VPNs is the encrypted tunneling
+
+589
+00:34:26,348 --> 00:34:30,288
+establish and encrypt point-to-point
+connection
+
+590
+00:34:30,408 --> 00:34:32,248
+over public network masking
+
+591
+00:34:33,128 --> 00:34:36,127
+IP address and protecting data from packet
+
+592
+00:34:36,288 --> 00:34:38,048
+sniffing.
+
+593
+00:34:39,328 --> 00:34:42,788
+And HTTPS or TLS
+
+594
+00:34:42,868 --> 00:34:46,508
+encryption is the transport layer
+
+595
+00:34:46,568 --> 00:34:50,428
+protection encrypts HTTP
+
+596
+00:34:50,488 --> 00:34:53,848
+communication between web browsers
+and servers
+
+597
+00:34:54,528 --> 00:34:58,328
+using transport layer security TLS
+
+598
+00:34:59,228 --> 00:34:59,388
+in
+
+599
+00:35:00,628 --> 00:35:01,848
+mitigating the
+
+600
+00:35:02,988 --> 00:35:03,968
+eavesdropping
+
+601
+00:35:04,928 --> 00:35:08,248
+and man-in-the-middle attacks.
+
+602
+00:35:11,008 --> 00:35:14,508
+So we will after knowing about all
+
+603
+00:35:14,568 --> 00:35:17,928
+the way of protecting yourself.
+
+604
+00:35:21,728 --> 00:35:22,028
+So
+
+605
+00:35:23,088 --> 00:35:25,168
+the firewall is more
+
+606
+00:35:26,628 --> 00:35:29,668
+than easy to understand. The firewall
+is more like gate.
+
+607
+00:35:30,148 --> 00:35:30,488
+You let
+
+608
+00:35:31,428 --> 00:35:31,608
+what
+
+609
+00:35:32,608 --> 00:35:36,508
+connection in, what out and you ban which
+
+610
+00:35:36,588 --> 00:35:39,428
+kind of protocol or the address.
+
+611
+00:35:40,488 --> 00:35:43,708
+For the VPN is more like you create like
+
+612
+00:35:44,428 --> 00:35:47,388
+your own way,
+the private way from the public
+
+613
+00:35:48,348 --> 00:35:50,408
+network and then that's
+
+614
+00:35:51,428 --> 00:35:52,728
+against the
+
+615
+00:35:54,948 --> 00:35:58,468
+data sniffing or packet sniffing from the
+
+616
+00:35:58,548 --> 00:36:01,768
+others. For the HTTPS
+
+617
+00:36:02,408 --> 00:36:05,428
+is more likely the connection
+
+618
+00:36:06,408 --> 00:36:10,188
+been secure and it will encrypt all data
+while
+
+619
+00:36:10,528 --> 00:36:12,368
+transferring on the network system.
+
+620
+00:36:13,848 --> 00:36:16,288
+So we will do the real example.
+
+621
+00:36:18,128 --> 00:36:21,868
+So scenario is consider a corporate
+employee connecting to
+
+622
+00:36:21,948 --> 00:36:22,168
+the
+
+623
+00:36:23,172 --> 00:36:26,912
+an encrypted public Wi-Fi network at the
+air- at an
+
+624
+00:36:27,092 --> 00:36:30,112
+airport. So from the public Wi-Fi
+
+625
+00:36:31,332 --> 00:36:35,072
+and unencrypted,
+then attacker on the same Wi-Fi
+
+626
+00:36:35,132 --> 00:36:38,892
+network launch the packet sniffing tool to
+capture local
+
+627
+00:36:39,432 --> 00:36:42,632
+airwave traffic. The attacker can
+
+628
+00:36:42,872 --> 00:36:43,592
+simulate-
+
+629
+00:36:44,672 --> 00:36:48,632
+simultaneously use the IP address sniffing
+and
+
+630
+00:36:48,712 --> 00:36:52,632
+the ARP cache poisoning to position
+
+631
+00:36:52,672 --> 00:36:56,492
+themselves between the employee's laptop
+and the
+
+632
+00:36:56,552 --> 00:36:59,932
+router, executing a man-in-the-middle
+
+633
+00:37:02,312 --> 00:37:05,992
+MITM attack, where, like, they create a s-
+
+634
+00:37:07,192 --> 00:37:07,812
+uh, middle
+
+635
+00:37:09,032 --> 00:37:12,292
+gate to collect all of the data that's
+been
+
+636
+00:37:12,332 --> 00:37:14,232
+transferring through the router
+
+637
+00:37:15,152 --> 00:37:15,472
+and
+
+638
+00:37:16,792 --> 00:37:17,032
+get,
+
+639
+00:37:18,792 --> 00:37:19,012
+and
+
+640
+00:37:19,932 --> 00:37:23,832
+get all of your private information,
+like login from the,
+
+641
+00:37:24,792 --> 00:37:26,452
+hmm, from your corporate,
+
+642
+00:37:27,411 --> 00:37:31,172
+your username, your password,
+what you're doing, what you're
+
+643
+00:37:31,212 --> 00:37:31,652
+searching,
+
+644
+00:37:32,832 --> 00:37:36,392
+all of that. So the risk of that
+is the employee access
+
+645
+00:37:36,472 --> 00:37:40,432
+internal com-company application via
+unencrypted
+
+646
+00:37:40,632 --> 00:37:44,492
+HTTP. The attacker can intercept
+
+647
+00:37:44,532 --> 00:37:48,312
+the session cookies
+and log in right away to credential in a
+
+648
+00:37:48,372 --> 00:37:51,992
+clear text. So you technically,
+you give a key to
+
+649
+00:37:52,772 --> 00:37:56,532
+the attacker and open the gate to get all
+of your money
+
+650
+00:37:56,612 --> 00:37:56,792
+out.
+
+651
+00:37:58,332 --> 00:38:01,892
+So the mitigation is to by enforce the
+HTTPS
+
+652
+00:38:02,232 --> 00:38:05,912
+and routing all laptop traffic through a
+VPN.
+
+653
+00:38:06,752 --> 00:38:09,292
+The transmission is encrypted end-to-end.
+
+654
+00:38:09,772 --> 00:38:13,652
+Even though the attacker capture the
+physical packet via sniffing,
+
+655
+00:38:14,532 --> 00:38:16,132
+the payload appears as
+
+656
+00:38:16,972 --> 00:38:19,632
+unreadable and ciphertext
+
+657
+00:38:20,912 --> 00:38:24,832
+preserving the confidentially
+and maintaining
+
+658
+00:38:24,872 --> 00:38:28,532
+the network integrity. So you apply the
+
+659
+00:38:28,572 --> 00:38:31,972
+VPN on that, and it creates a tunnel way,
+and it's
+
+660
+00:38:32,072 --> 00:38:35,772
+encrypted your way.
+So even though data can be
+
+661
+00:38:35,832 --> 00:38:39,512
+insecure and transferring on the Wi-Fi,
+but they not able to
+
+662
+00:38:41,512 --> 00:38:43,592
+know what kind of data been sent out.
+
+663
+00:38:46,412 --> 00:38:49,532
+And yeah, that's it for the, uh,
+
+664
+00:38:50,472 --> 00:38:53,012
+network system that we have talked about.
+
+665
+00:38:53,712 --> 00:38:54,392
+After five thing,
+
+666
+00:38:55,192 --> 00:38:58,732
+uh, here's the reference
+that I haven't used for the network.
+
+667
+00:38:59,192 --> 00:39:00,912
+And also, I using the,
+
+668
+00:39:01,772 --> 00:39:05,472
+uh, support in summarizing and, uh,
+checking the
+
+669
+00:39:05,532 --> 00:39:09,352
+information accuracy and rephrase term,
+so it's
+
+670
+00:39:09,432 --> 00:39:10,752
+more easier to read
+
+671
+00:39:11,592 --> 00:39:14,732
+and understanding as a common way.
+Thank you very much.

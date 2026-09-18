@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Connection Network Diagram</title>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        flowchart: {
+          useMaxWidth: false,
+          htmlLabels: true,
+          curve: 'basis'
+        }
+      });
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        margin: 0;
+        padding: 24px;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        padding: 24px;
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+      }
+      .mermaid {
+        overflow-x: auto;
+        text-align: center;
+      }
+      svg {
+        width: 100% !important;
+        height: auto !important;
+        min-width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Multi-Connection Network Architecture</h1>
+      <div class="mermaid">
+        graph TD
+            subgraph "Home Access Network"
+                Router[Home Router/AP]
+                Desktop[Desktop PC]
+                Laptop[Laptop]
+                Phone[Smartphone]
+                Printer[Network Printer]
+                IoT[Smart Thermostat]
+                Modem[DSL/Cable Modem]
+
+                Router -- Ethernet --> Desktop
+                Router -- Wi-Fi --> Laptop
+                Router -- Wi-Fi --> Phone
+                Router -- Wi-Fi --> Printer
+                Router -- Wi-Fi --> IoT
+                Router -- Ethernet --> Modem
+            end
+
+            subgraph "ISP Network"
+                ISP_Edge[ISP Edge Router]
+                CoreA[Core Router A]
+                CoreB[Core Router B]
+                CoreC[Core Router C]
+                Cloud[Cloud Service]
+                Web[Web Server]
+                App[Application Server]
+
+                Modem -- Coax/Phone Line --> ISP_Edge
+                ISP_Edge --> CoreA
+                ISP_Edge --> CoreB
+                CoreA --> CoreC
+                CoreB --> CoreC
+                CoreA --> Cloud
+                CoreB --> Web
+                CoreC --> App
+            end
+
+            subgraph "Remote Services"
+                DB[Database Server]
+                Storage[Cloud Storage]
+                Web --> DB
+                App --> Storage
+            end
+
+            style Router fill:#f9f,stroke:#333,stroke-width:2px
+            style Modem fill:#bbf,stroke:#333,stroke-width:1px
+            style ISP_Edge fill:#ff9,stroke:#333,stroke-width:1px
+            style CoreA fill:#cfe8ff,stroke:#333,stroke-width:1px
+            style CoreB fill:#cfe8ff,stroke:#333,stroke-width:1px
+            style CoreC fill:#cfe8ff,stroke:#333,stroke-width:1px
+            style Cloud fill:#d9f7be,stroke:#333,stroke-width:1px
+            style Web fill:#d9f7be,stroke:#333,stroke-width:1px
+            style App fill:#d9f7be,stroke:#333,stroke-width:1px
+            style DB fill:#fde3d7,stroke:#333,stroke-width:1px
+            style Storage fill:#fde3d7,stroke:#333,stroke-width:1px
+      </div>
+    </div>
+  </body>
+</html>
